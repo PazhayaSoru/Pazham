@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #f5f4f4;
+  font-family: 'Arial', sans-serif;
+}
+
+.logo {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.nav a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-left: 1.5rem;
+  color: #333;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: #090909;
+  transition: width 0.4s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+
+.nav a:hover {
+  cursor: pointer;
+  color: #e27360;
+}
+
+.header-border{
+  color:black;
+  background-color: black;
+  height: 10px;
+  border-radius: 7px;
+}
+
+.header-container{
+  width: 90%;
+  margin-left: 70px;
+}
+
+.p-in-pazham{
+  color: #f5f4f4;
+  text-shadow:
+  -2px -1px 0 #000,
+   3px -1px 0 #000,
+  -2px  1px 0 #000,
+   3px  1px 0 #000;
+   transition: color 0.2s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.p-in-pazham:hover{
+  color: #f3836f;
+  text-shadow:none;
+  cursor: pointer;
+}
+
+
+.dot{
+    width: 8px;         /* size of the dot */
+    height: 8px;
+    background-color: #e27360; /* color of the dot */
+    border-radius: 50%;  /* makes it perfectly round */
+    display: inline-block;
+    margin: 0px 2px;
+  }  
+
+
+.button-rect-medium{
+  background-color: #f5f4f4;
+  width: 120px;
+  height: 50px;
+  border:solid;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.cta-button {
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 15px;
+}
+
+.cta-button.primary {
+  width:150px;
+  height:60px;
+  background-color: #e27360;
+  color: #fff;
+  border: 3px solid #e27360;
+  transition: all 0.3s ease;
+}
+
+.cta-button.primary:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.cta-button.secondary {
+  width:150px;
+  height:60px;
+  background-color: #333;
+  color: #e27360;
+  transition: all 0.3s ease;
+}
+
+.cta-button.secondary:hover {
+  background-color: #fff; 
+  color: black;
+  border: 3px solid #e27360;
+}

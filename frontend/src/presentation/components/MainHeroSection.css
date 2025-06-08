@@ -1,0 +1,66 @@
+.hero-section {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  background-color: #f9f9f9;
+}
+
+.sidebar {
+  position: fixed; /* Keeps the sidebar fixed on the left */
+  top: 0;
+  left: -10px;
+  width: 300px; /* Fixed width for the sidebar */
+  height: 40vh; /* Sidebar takes full viewport height */
+  background-color: #1c1b1b; /* Dark sidebar background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  object-fit: contain;
+  margin-top: 250px;
+  border-radius: 10px;
+}
+
+.sidebar-button {
+  margin-top: 2px;
+  width: 300px;
+  padding: 1rem;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #e27360; /* Matches primary theme color */
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.sidebar-button:hover {
+  background-color: white;
+  color: black; /* Inverse hover effect */
+  border: solid #e27360;
+}
+
+.main-content {
+  margin-left: 300px; /* Leaves space for the fixed sidebar */
+  width: calc(100% - 250px); /* Ensures content takes up remaining space */
+  padding: 3rem;
+  overflow-y: auto; /* Enables scrolling for the main content */
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.main-content p {
+  font-size: 1.6rem;
+  color: #666; /* Subtle text color */
+  margin-top: 1rem;
+}
+
+/* Add some filler content for testing scrolling */
+.filler {
+  margin-bottom: 2rem;
+}

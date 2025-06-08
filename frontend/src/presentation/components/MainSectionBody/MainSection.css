@@ -1,0 +1,120 @@
+.main-content {
+  margin-left: 270px; 
+  width: calc(100% - 300px); 
+  padding: 3rem;
+  overflow-y: auto; 
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-left: 150px;
+}
+
+.main-content p {
+  font-size: 1.6rem;
+  color: #666; 
+  margin-bottom: 2rem;
+}
+
+.operation-button {
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  background-color: #e27360; 
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.operation-button:hover {
+  background-color: transparent;
+  color: #e27360; 
+  border: solid #e27360;
+}
+
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 0.7rem;
+  border-bottom: solid #ccc; 
+}
+
+.data-table th {
+color:white;
+background-color: #e27360;
+border: solid 1px black;
+border-radius: 2px; 
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f9f9f9; 
+}
+
+.data-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.update-button,
+.delete-button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.update-button {
+  background-color: #191919; 
+  color: #e27360;
+  margin-right: 10px;
+}
+
+.update-button:hover {
+  cursor: pointer;
+  background-color: #494645; 
+}
+
+.delete-button {
+  background-color: #e27360; 
+  color: #fff;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+  background-color: #d65a4d; /* Darker red-orange on hover */
+}
+
+
+.p-in-pazham{
+    color: #f5f4f4;
+  text-shadow:
+  -2px -1px 0 #000,
+   3px -1px 0 #000,
+  -2px  1px 0 #000,
+   3px  1px 0 #000;
+}
+
+.categories {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: #333; /* for removing default arrow on some browsers */
+}
+
+.categories:focus {
+  outline: none;
+  border-color: #e27360;
+  box-shadow: 0 0 0 2px rgba(226, 115, 96, 0.2);
+}
